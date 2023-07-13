@@ -2,7 +2,7 @@ import { isNumEven } from "./isNumEven.js";
 import { rndm } from "./rndm.js";
 import readlineSync from 'readline-sync';
 
-const evenLogic = () => {
+const evenLogic = (userName) => {
   for (let i = 0; i < 3; i += 1) {
     let rndmNum = rndm();
     const evenResult = isNumEven(rndmNum);
@@ -15,6 +15,7 @@ const evenLogic = () => {
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${evenResult}'.`);
     }
   }
+  return console.log(`Congratulations, ${userName}!`)
 };
 
 export {evenLogic};
