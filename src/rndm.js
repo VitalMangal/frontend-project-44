@@ -1,5 +1,6 @@
 const rndm = () => {
-const rndmNum = Math.floor(Math.random() * 100) + 1;
-return rndmNum;}
+  const rndmNum = Math.floor(Math.random() * 100) + 1;
+  return rndmNum;
+};
 
-export {rndm};
+export default rndm;

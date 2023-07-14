@@ -1,10 +1,13 @@
-import { isNumEven } from "./isNumEven.js";
-import { rndm } from "./rndm.js";
+import gameBase from '../src/index.js';
+import greeting from '../src/cli.js';
+import evenData from '../src/evenData.js';
 
-const gameFunction = () => {
-    const question = rndm();
-    const answer = isNumEven(question);
-    return {question, answer}
+const evenGame = () => {
+  console.log('brain-even');
+  const userName = greeting();
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const arr = evenData();
+  gameBase(userName, arr);
 };
 
-export {gameFunction};
+export default evenGame;
