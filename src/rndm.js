@@ -1,5 +1,5 @@
-const rndm = () => {
-  const rndmNum = Math.floor(Math.random() * 100) + 1;
+const rndm = (num = 100) => {
+  const rndmNum = Math.floor(Math.random() * num) + 1;
   return rndmNum;
 };
 
