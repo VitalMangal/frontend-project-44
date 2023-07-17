@@ -8,7 +8,7 @@ const gameBase = (userName, arr) => {
       console.log('Correct!');
     } else {
       return console.log(
-        `'${userAnswer}' is wrong answer ;(. Correct answer was '${arr[i][1]}'.`,
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${arr[i][1]}'.\nLet's try again, ${userName}! `,
       );
     }
   }

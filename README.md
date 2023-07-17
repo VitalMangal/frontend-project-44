@@ -5,4 +5,6 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
-Project demo: https://asciinema.org/a/3N4xZY4w8y77mgRleyZ1OUiLW
+Project demo: 
+1. Brain-even: https://asciinema.org/a/3N4xZY4w8y77mgRleyZ1OUiLW
+2. Brain-calc: https://asciinema.org/a/MbHJffwOXaIfBvtBt7cN8dBiS
