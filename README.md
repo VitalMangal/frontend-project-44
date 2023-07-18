@@ -10,5 +10,7 @@ Project demo:
 2. Brain-calc:        https://asciinema.org/a/MbHJffwOXaIfBvtBt7cN8dBiS
 3. Brain-gcd:         https://asciinema.org/a/kb0PuRcZGHyNwCJ3KLKNa6UNe
 4. Brain-progression: https://asciinema.org/a/5LcfR7Kb9Zlj6SXzUVmGE7DNO
+5. Brain-prime:       https://asciinema.org/a/XaAtyq0DKpBdLvrjk4q3ca2WN
+
 
 
