@@ -6,5 +6,9 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
 Project demo: 
-1. Brain-even: https://asciinema.org/a/3N4xZY4w8y77mgRleyZ1OUiLW
-2. Brain-calc: https://asciinema.org/a/MbHJffwOXaIfBvtBt7cN8dBiS
+1. Brain-even:        https://asciinema.org/a/3N4xZY4w8y77mgRleyZ1OUiLW
+2. Brain-calc:        https://asciinema.org/a/MbHJffwOXaIfBvtBt7cN8dBiS
+3. Brain-gcd:         https://asciinema.org/a/kb0PuRcZGHyNwCJ3KLKNa6UNe
+4. Brain-progression: https://asciinema.org/a/5LcfR7Kb9Zlj6SXzUVmGE7DNO
+
+
