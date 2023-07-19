@@ -22,6 +22,14 @@ Project demo:
 4. Brain-progression: https://asciinema.org/a/5LcfR7Kb9Zlj6SXzUVmGE7DNO
 5. Brain-prime:       https://asciinema.org/a/XaAtyq0DKpBdLvrjk4q3ca2WN
 
+Установка:
+1. Склонировать к себе на компьютер с помощью git clone https://github.com/VitalMangal/frontend-project-44.git
+2. Запустить команду make install.
+3. Запустить интересующую игру с помощью короткой команды.
+
+Процесс установки: https://asciinema.org/a/4UMrEJIsAoyGZ3NtdN19BpLMh
+
+
 
 
 
