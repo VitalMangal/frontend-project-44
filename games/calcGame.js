@@ -1,6 +1,6 @@
 import gameBase from '../src/index.js';
 import greeting from '../src/cli.js';
-import calcData from '../src/calcData.js';
+import calcData from './calcData.js';
 
 const calcGame = () => {
   console.log('brain-calc');

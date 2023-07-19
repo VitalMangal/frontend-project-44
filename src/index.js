@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
 const gameBase = (userName, arr) => {
-  for (let i = 0; i < 3; i += 1) {
+  const numberOfRounds = 3;
+  for (let i = 0; i < numberOfRounds; i += 1) {
     console.log(`Question: ${arr[i][0]}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (arr[i][1] === userAnswer) {

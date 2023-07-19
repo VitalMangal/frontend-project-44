@@ -1,6 +1,6 @@
 import gameBase from '../src/index.js';
 import greeting from '../src/cli.js';
-import evenData from '../src/evenData.js';
+import evenData from './evenData.js';
 
 const evenGame = () => {
   console.log('brain-even');

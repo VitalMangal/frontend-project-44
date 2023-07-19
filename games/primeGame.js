@@ -1,6 +1,6 @@
 import gameBase from '../src/index.js';
 import greeting from '../src/cli.js';
-import primeData from '../src/primeData.js';
+import primeData from './primeData.js';
 
 const primeGame = () => {
   console.log('brain-prime');

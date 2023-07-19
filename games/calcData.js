@@ -1,12 +1,13 @@
-import rndm from './rndm.js';
+import getRandomInt from '../src/utils/getRandomInt.js';
 
 const calcData = () => {
   const result = [];
-  for (let i = 0; i < 3; i += 1) {
-    const el1 = rndm();
-    const el2 = rndm();
+  const numberOfRounds = 3;
+  for (let i = 0; i < numberOfRounds; i += 1) {
+    const el1 = getRandomInt();
+    const el2 = getRandomInt();
     const signs = ['+', '*', '-'];
-    const sign = signs[rndm(3)];
+    const sign = signs[getRandomInt(0, 2)];
     const question = `${el1} ${sign} ${el2}`;
     let answer = 0;
     switch (sign) {

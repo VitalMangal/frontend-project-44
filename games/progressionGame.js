@@ -1,6 +1,6 @@
 import gameBase from '../src/index.js';
 import greeting from '../src/cli.js';
-import progressionData from '../src/progressionData.js';
+import progressionData from './progressionData.js';
 
 const progressionGame = () => {
   console.log('brain-progression');

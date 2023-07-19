@@ -1,6 +1,6 @@
 import gameBase from '../src/index.js';
 import greeting from '../src/cli.js';
-import gcdData from '../src/gcdData.js';
+import gcdData from './gcdData.js';
 
 const gcdGame = () => {
   console.log('brain-gcd');
