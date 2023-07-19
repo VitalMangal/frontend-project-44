@@ -15,7 +15,8 @@ const progressionData = () => {
     const indx = getRandomInt(0, questionLength);
     const answer = String(question[indx]);
     question[indx] = '..';
-    const roundResult = [question, answer];
+    const questionString = question.join(' ');
+    const roundResult = [questionString, answer];
     result.push(roundResult);
   }
   return result;
