@@ -1,5 +1,4 @@
 import runGameBase from '../index.js';
-import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const progressionData = () => {
@@ -20,10 +19,9 @@ const progressionData = () => {
 };
 
 const runProgressionGame = () => {
-  console.log('brain-progression');
-  const userName = greeting();
-  console.log('What number is missing in the progression?');
-  runGameBase(userName, progressionData);
+  const gameName = 'brain-progression';
+  const exercise = 'What number is missing in the progression?';
+  runGameBase(progressionData, gameName, exercise);
 };
 
 export default runProgressionGame;

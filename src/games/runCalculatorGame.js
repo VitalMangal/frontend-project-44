@@ -8,7 +8,7 @@ const calcData = () => {
   const signs = ['+', '*', '-'];
   const sign = signs[getRandomInt(0, signs.length - 1)];
   const question = `${el1} ${sign} ${el2}`;
-  let answer = getCalcAnswer(el1, el2, sign);
+  const answer = getCalcAnswer(el1, el2, sign);
   const result = [question, answer];
   return result;
 };

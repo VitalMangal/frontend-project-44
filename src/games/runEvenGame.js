@@ -1,5 +1,4 @@
 import runGameBase from '../index.js';
-import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const isNumEven = (num) => {
@@ -26,10 +25,9 @@ const evenData = () => {
 };
 
 const runEvenGame = () => {
-  console.log('brain-even');
-  const userName = greeting();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  runGameBase(userName, evenData);
+  const gameName = 'brain-even';
+  const exercise = 'Answer "yes" if the number is even, otherwise answer "no".';
+  runGameBase(evenData, gameName, exercise);
 };
 
 export default runEvenGame;

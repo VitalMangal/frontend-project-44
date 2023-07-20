@@ -1,5 +1,4 @@
 import runGameBase from '../index.js';
-import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const isPrime = (num) => {
@@ -22,10 +21,9 @@ const primeData = () => {
 };
 
 const runPrimeGame = () => {
-  console.log('brain-prime');
-  const userName = greeting();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  runGameBase(userName, primeData);
+  const gameName = 'brain-prime';
+  const exercise = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  runGameBase(primeData, gameName, exercise);
 };
 
 export default runPrimeGame;
