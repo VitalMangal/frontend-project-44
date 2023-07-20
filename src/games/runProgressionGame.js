@@ -3,9 +3,13 @@ import getRandomInt from '../utils/getRandomInt.js';
 
 const getProgressionQuestion = () => {
   let elementOfArr = getRandomInt();
-  const booster = getRandomInt(1, 10);
+  const startOfBoosterRange = 1;
+  const endOfBoosterRange = 10;
+  const booster = getRandomInt(startOfBoosterRange, endOfBoosterRange);
   const question = [elementOfArr];
-  const questionLength = getRandomInt(5, 10);
+  const startOfProgressionLength = 5;
+  const endOfProgressionLength = 10;
+  const questionLength = getRandomInt(startOfProgressionLength, endOfProgressionLength);
   for (let i = 0; i < questionLength; i += 1) {
     question.push(elementOfArr + booster);
     elementOfArr += booster;
