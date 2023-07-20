@@ -1,3 +1,5 @@
+import gameBase from '../index.js';
+import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const isNumEven = (num) => {
@@ -17,15 +19,23 @@ const isNumEven = (num) => {
 };
 
 const evenData = () => {
-  const result = [];
+  const resultt = [];
   const numberOfRounds = 3;
   for (let i = 0; i < numberOfRounds; i += 1) {
     const question = getRandomInt();
     const answer = isNumEven(question);
     const subResult = [question, answer];
-    result.push(subResult);
+    resultt.push(subResult);
   }
-  return result;
+  return resultt;
 };
 
-export default evenData;
+const runEvenGame = () => {
+  console.log('brain-even');
+  const userName = greeting();
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const arr = evenData();
+  gameBase(userName, arr);
+};
+
+export default runEvenGame;

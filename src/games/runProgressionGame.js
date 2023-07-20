@@ -1,3 +1,5 @@
+import gameBase from '../index.js';
+import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const progressionData = () => {
@@ -22,4 +24,12 @@ const progressionData = () => {
   return result;
 };
 
-export default progressionData;
+const runProgressionGame = () => {
+  console.log('brain-progression');
+  const userName = greeting();
+  console.log('What number is missing in the progression?');
+  const arr = progressionData();
+  gameBase(userName, arr);
+};
+
+export default runProgressionGame;
