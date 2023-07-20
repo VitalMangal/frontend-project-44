@@ -13,9 +13,7 @@ const isPrime = (num) => {
 const primeData = () => {
   const question = getRandomInt(1, 100);
   let answer = '';
-  if (isPrime(question)) {
-    answer = 'yes';
-  } else { answer = 'no'; }
+  answer = (isPrime(question)) ? 'yes' : 'no';
   const result = [question, answer];
   return result;
 };
