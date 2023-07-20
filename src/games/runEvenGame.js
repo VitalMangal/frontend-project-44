@@ -19,14 +19,9 @@ const isNumEven = (num) => {
 };
 
 const evenData = () => {
-  const resultt = [];
-  const numberOfRounds = 3;
-  for (let i = 0; i < numberOfRounds; i += 1) {
-    const question = getRandomInt();
-    const answer = isNumEven(question);
-    const subResult = [question, answer];
-    resultt.push(subResult);
-  }
+  const question = getRandomInt();
+  const answer = isNumEven(question);
+  const resultt = [question, answer];
   return resultt;
 };
 
@@ -34,8 +29,7 @@ const runEvenGame = () => {
   console.log('brain-even');
   const userName = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const arr = evenData();
-  gameBase(userName, arr);
+  gameBase(userName, evenData);
 };
 
 export default runEvenGame;

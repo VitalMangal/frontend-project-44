@@ -12,17 +12,12 @@ const isPrime = (num) => {
 };
 
 const primeData = () => {
-  const result = [];
-  const numberOfRounds = 3;
-  for (let i = 0; i < numberOfRounds; i += 1) {
-    const question = getRandomInt();
-    let answer = '';
-    if (isPrime(question)) {
-      answer = 'yes';
-    } else { answer = 'no'; }
-    const subResult = [question, answer];
-    result.push(subResult);
-  }
+  const question = getRandomInt(1, 100);
+  let answer = '';
+  if (isPrime(question)) {
+    answer = 'yes';
+  } else { answer = 'no'; }
+  const result = [question, answer];
   return result;
 };
 
@@ -30,8 +25,7 @@ const runPrimeGame = () => {
   console.log('brain-prime');
   const userName = greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  const arr = primeData();
-  gameBase(userName, arr);
+  gameBase(userName, primeData);
 };
 
 export default runPrimeGame;
