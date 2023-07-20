@@ -1,4 +1,4 @@
-import gameBase from '../index.js';
+import runGameBase from '../index.js';
 import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
@@ -29,7 +29,7 @@ const runEvenGame = () => {
   console.log('brain-even');
   const userName = greeting();
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  gameBase(userName, evenData);
+  runGameBase(userName, evenData);
 };
 
 export default runEvenGame;

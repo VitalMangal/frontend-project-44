@@ -1,4 +1,4 @@
-import gameBase from '../index.js';
+import runGameBase from '../index.js';
 import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
@@ -21,7 +21,7 @@ const runGcdGame = () => {
   console.log('brain-gcd');
   const userName = greeting();
   console.log('Find the greatest common divisor of given numbers.');
-  gameBase(userName, gcdData);
+  runGameBase(userName, gcdData);
 };
 
 export default runGcdGame;

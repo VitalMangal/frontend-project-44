@@ -1,5 +1,4 @@
-import gameBase from '../index.js';
-import greeting from '../cli.js';
+import runGameBase from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 import getCalcAnswer from '../utils/getCalcAnswer.js';
 
@@ -15,10 +14,9 @@ const calcData = () => {
 };
 
 const runCalculatorGame = () => {
-  console.log('brain-calc');
-  const userName = greeting();
-  console.log('What is the result of the expression?');
-  gameBase(userName, calcData);
+  const gameName = 'brain-calc';
+  const exercise = 'What is the result of the expression?';
+  runGameBase(calcData, gameName, exercise);
 };
 
 export default runCalculatorGame;

@@ -1,4 +1,4 @@
-import gameBase from '../index.js';
+import runGameBase from '../index.js';
 import greeting from '../cli.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
@@ -25,7 +25,7 @@ const runPrimeGame = () => {
   console.log('brain-prime');
   const userName = greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  gameBase(userName, primeData);
+  runGameBase(userName, primeData);
 };
 
 export default runPrimeGame;
