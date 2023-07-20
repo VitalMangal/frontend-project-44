@@ -1,4 +1,4 @@
-import getRandomInt from '../src/utils/getRandomInt.js';
+import getRandomInt from '../utils/getRandomInt.js';
 
 const calcData = () => {
   const result = [];

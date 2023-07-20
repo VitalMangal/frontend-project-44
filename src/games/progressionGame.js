@@ -1,5 +1,5 @@
-import gameBase from '../src/index.js';
-import greeting from '../src/cli.js';
+import gameBase from '../index.js';
+import greeting from '../cli.js';
 import progressionData from './progressionData.js';
 
 const runProgressionGame = () => {

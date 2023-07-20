@@ -1,4 +1,4 @@
-import getRandomInt from '../src/utils/getRandomInt.js';
+import getRandomInt from '../utils/getRandomInt.js';
 
 const isPrime = (num) => {
   for (let i = 2; i < Math.ceil(num / 2); i += 1) {
