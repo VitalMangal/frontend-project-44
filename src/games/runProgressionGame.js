@@ -23,8 +23,7 @@ const progressionData = () => {
   const answer = String(question[indx]);
   question[indx] = '..';
   const questionString = question.join(' ');
-  const result = [questionString, answer];
-  return result;
+  return [questionString, answer];
 };
 
 const runProgressionGame = () => {

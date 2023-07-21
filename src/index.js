@@ -8,7 +8,8 @@ const runGameBase = (getData, gameName, exercise) => {
   console.log(exercise);
   const numberOfRounds = 3;
   for (let i = 0; i < numberOfRounds; i += 1) {
-    const [question, answer] = getData();
+    const [question, answerInNumber] = getData();
+    const answer = String(answerInNumber);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer === userAnswer) {

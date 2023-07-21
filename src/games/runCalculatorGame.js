@@ -2,21 +2,16 @@ import runGameBase from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const getCalcAnswer = (el1, el2, sign) => {
-  let answer = '';
   switch (sign) {
     case '+':
-      answer = String(el1 + el2);
-      break;
+      return el1 + el2;
     case '*':
-      answer = String(el1 * el2);
-      break;
+      return el1 * el2;
     case '-':
-      answer = String(el1 - el2);
-      break;
+      return el1 - el2;
     default:
       throw new Error(`Unknown sign: '${sign}'!`);
   }
-  return answer;
 };
 
 const calcData = () => {
