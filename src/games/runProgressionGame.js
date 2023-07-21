@@ -20,7 +20,7 @@ const getProgressionQuestion = () => {
 const progressionData = () => {
   const question = getProgressionQuestion();
   const indx = getRandomInt(0, question.length - 1);
-  const answer = String(question[indx]);
+  const answer = question[indx];
   question[indx] = '..';
   const questionString = question.join(' ');
   return [questionString, answer];

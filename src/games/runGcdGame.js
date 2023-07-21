@@ -2,17 +2,11 @@ import runGameBase from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const getGcd = (el1, el2) => {
-  while (el1 !== 0 && el2 !== 0) {
-    if (el1 > el2) {
-      // eslint-disable-next-line no-param-reassign
-      el1 %= el2;
-    } else {
-      // eslint-disable-next-line no-param-reassign
-      el2 %= el1;
-    }
+  if (el2 !== 0) {
+    const newElement = el1 % el2;
+    return getGcd(el2, newElement);
   }
-  const answer = String(el1 + el2);
-  return answer;
+  return el1;
 };
 
 const gcdData = () => {

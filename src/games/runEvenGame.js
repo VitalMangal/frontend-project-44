@@ -1,11 +1,11 @@
 import runGameBase from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
-const getAnswerValue = (num) => ((num % 2 === 0) ? 'yes' : 'no');
+const isNumEven = (num) => ((num % 2 === 0));
 
 const evenData = () => {
   const question = getRandomInt();
-  const answer = getAnswerValue(question);
+  const answer = (isNumEven(question)) ? 'yes' : 'no';
   const resultt = [question, answer];
   return resultt;
 };

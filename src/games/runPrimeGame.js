@@ -2,6 +2,7 @@ import runGameBase from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
 const isPrime = (num) => {
+  if (num === 1) { return false; }
   for (let i = 2; i < Math.ceil(num / 2); i += 1) {
     if (num % i === 0) {
       return false;
@@ -11,11 +12,10 @@ const isPrime = (num) => {
 };
 
 const primeData = () => {
-  const rangeStart = 2;
+  const rangeStart = 1;
   const rangeEnd = 100;
   const question = getRandomInt(rangeStart, rangeEnd);
-  let answer = '';
-  answer = (isPrime(question)) ? 'yes' : 'no';
+  const answer = (isPrime(question)) ? 'yes' : 'no';
   const result = [question, answer];
   return result;
 };
