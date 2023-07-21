@@ -1,14 +1,12 @@
 import runGameBase from '../index.js';
 import getRandomInt from '../utils/getRandomInt.js';
 
-const getProgressionQuestion = () => {
+const getProgressionQuestion = (startOfProgressionLength = 5, endOfProgressionLength = 10) => {
   let elementOfArr = getRandomInt();
   const startOfBoosterRange = 1;
   const endOfBoosterRange = 10;
   const booster = getRandomInt(startOfBoosterRange, endOfBoosterRange);
   const question = [elementOfArr];
-  const startOfProgressionLength = 5;
-  const endOfProgressionLength = 10;
   const questionLength = getRandomInt(startOfProgressionLength, endOfProgressionLength);
   for (let i = 0; i < questionLength; i += 1) {
     question.push(elementOfArr + booster);
