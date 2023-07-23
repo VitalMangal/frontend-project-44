@@ -9,11 +9,11 @@ const getGcd = (el1, el2) => {
   return el1;
 };
 
-const gcdData = () => {
-  const el1 = getRandomInt(2, 100);
-  const el2 = getRandomInt(2, 100);
+const gcdData = (startOfRandomNumberRange = 2, endOfRandomNumberRange = 100) => {
+  const el1 = getRandomInt(startOfRandomNumberRange, endOfRandomNumberRange);
+  const el2 = getRandomInt(startOfRandomNumberRange, endOfRandomNumberRange);
   const question = `${el1} ${el2}`;
-  const answer = getGcd(el1, el2);
+  const answer = String(getGcd(el1, el2));
   const result = [question, answer];
   return result;
 };

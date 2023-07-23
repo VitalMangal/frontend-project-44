@@ -16,8 +16,7 @@ const primeData = () => {
   const rangeEnd = 100;
   const question = getRandomInt(rangeStart, rangeEnd);
   const answer = (isPrime(question)) ? 'yes' : 'no';
-  const result = [question, answer];
-  return result;
+  return [question, answer];
 };
 
 const runPrimeGame = () => {
