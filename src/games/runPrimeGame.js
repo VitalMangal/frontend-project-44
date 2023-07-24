@@ -11,7 +11,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const primeData = () => {
+const generatePrimeData = () => {
   const rangeStart = 1;
   const rangeEnd = 100;
   const question = getRandomInt(rangeStart, rangeEnd);
@@ -22,7 +22,7 @@ const primeData = () => {
 const runPrimeGame = () => {
   const gameName = 'brain-prime';
   const exercise = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  runGameBase(primeData, gameName, exercise);
+  runGameBase(generatePrimeData, gameName, exercise);
 };
 
 export default runPrimeGame;

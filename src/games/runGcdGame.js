@@ -9,19 +9,18 @@ const getGcd = (el1, el2) => {
   return el1;
 };
 
-const gcdData = (startOfRandomNumberRange = 2, endOfRandomNumberRange = 100) => {
+const generateGcdData = (startOfRandomNumberRange = 2, endOfRandomNumberRange = 100) => {
   const el1 = getRandomInt(startOfRandomNumberRange, endOfRandomNumberRange);
   const el2 = getRandomInt(startOfRandomNumberRange, endOfRandomNumberRange);
   const question = `${el1} ${el2}`;
   const answer = String(getGcd(el1, el2));
-  const result = [question, answer];
-  return result;
+  return [question, answer];
 };
 
 const runGcdGame = () => {
   const gameName = 'brain-gcd';
   const exercise = 'Find the greatest common divisor of given numbers.';
-  runGameBase(gcdData, gameName, exercise);
+  runGameBase(generateGcdData, gameName, exercise);
 };
 
 export default runGcdGame;
